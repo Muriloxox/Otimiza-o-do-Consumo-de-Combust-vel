@@ -1,2 +1,1 @@
-# Otimiza-o-do-Consumo-de-Combust-vel
-Análise Matemática das Taxas de Consumo em Função da Velocidade.
+# Otimização do Consumo de Combustível: Uma Análise Matemática das Taxas de Consumo em Função da Velocidade.
