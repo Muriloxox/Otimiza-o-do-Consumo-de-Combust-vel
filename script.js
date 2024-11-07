@@ -3,7 +3,7 @@ let dadosCarros = [];
 
 async function carregarModelos() {
     try {
-        const resposta = await fetch("modelos_carros.json");
+        const resposta = await fetch("fuelData.json");
         dadosCarros = await resposta.json();
 
         const datalist = document.getElementById("modelos");
