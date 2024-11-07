@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otimização do Consumo de Combustível</title>
+    <link rel="stylesheet" href="sla.css">
+    <script src="tenta.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Otimização do Consumo de Combustível</h1>
+        <h2>Análise Matemática das Taxas de Consumo em Função da Velocidade</h2>
+
+        <div class="input-section">
+            <label for="modelo">Modelo do Carro:</label>
+            <input type="text" id="modelo" placeholder="Ex: Fiat Uno" list="modelos">
+            <datalist id="modelos"></datalist>
+
+            <label for="consumo">Consumo Urbano (km/l):</label>
+            <input type="number" id="consumo" placeholder="Ex: 10.5">
+
+            <button onclick="calcularConsumo()">Calcular</button>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <h3>Resultado para o modelo: <span id="info-modelo"></span></h3>
+            <table id="consumoTable">
+                <thead>
+                    <tr>
+                        <th>Velocidade (km/h)</th>
+                        <th>Consumo (l/100km)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <canvas id="graficoConsumo" width="400" height="300"></canvas>
+
+            <h4>Velocidade com menor consumo: <span id="minConsumo"></span> km/h</h4>
+        </div>
+
+        <div class="info-tab" onclick="toggleInfo()">Informações</div>
+        <div class="info-content" id="infoContent">
+            <p>Aqui estão algumas informações importantes sobre como o consumo de combustível é calculado e quais fatores podem influenciá-lo.</p>
+            <ul>
+                <li>Velocidade: A velocidade ideal para consumo mínimo varia com cada modelo de carro.</li>
+                <li>Condições de direção: Tráfego, aclives e o uso do ar condicionado também afetam o consumo.</li>
+                <li>Manutenção do veículo: Um carro bem cuidado geralmente tem um consumo de combustível mais eficiente.</li>
+                <li>O código recebe os valores de velocidade e consumo dentro do array, na definição da
+                    função quadrática que usamos. Além disso, faz o ajuste da curva de acordo com os dados
+                    e encontra os valores certeiros para os coeficientes a, b e c. Para no final, mostrar um gráfico a
+                    respeito dos dados coletados.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Criado por Murilo Quartz, vulgo embreagem. 🐦‍🔥</p>
+    </footer>
+</body>
+</html>
