@@ -1,0 +1,5 @@
+[
+    {"modelo": "Fiat Uno", "consumoUrbano": 10.5},
+    {"modelo": "Honda Civic", "consumoUrbano": 8.3},
+    {"modelo": "Toyota Corolla", "consumoUrbano": 9.2}
+]
