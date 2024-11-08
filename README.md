@@ -5,3 +5,5 @@ certos fatores, o estudo fornece conhecimentos valiosos sobre a otimização do 
 
 As derivadas desempenham um papel essencial na otimização do consumo de combustível em veículos. A primeira derivada da função de consumo de combustível em relação à velocidade, C’(v), identifica a velocidade na qual o consumo é minimizado, caracterizando um ponto crítico. A segunda derivada, C”(v), permite determinar se esse ponto crítico corresponde a um mínimo (otimização) ou máximo. Essa análise é crucial para desenvolver veículos mais eficientes e para implementar práticas de direção que reduzam o consumo de combustível, contribuindo para uma menor emissão de poluentes e economia de recursos.
 
+[Acesse o site aqui](https://muriloxox.github.io/Otimizacao-do-Consumo-de-Combustivel/)
+
